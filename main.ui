@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>413</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 66, 138, 255), stop:1 rgba(0, 200, 240, 255));</string>
+   </property>
+   <widget class="QFrame" name="menu_frame">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>121</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 30);
+border: 1px solid rgba(255, 255, 255 , 40);
+border-radius: 10px;</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="NetworkButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: white;
+	font-weight: bold;
+	fonr-size: 20pt;
+	background-color: rgba(255, 255, 255, 30);
+	border: 1px solid rgba(255, 255, 255, 40);
+	border-radius: 10px;
+	width: 230px;
+	height: 50px; 
+}
+QPushButton:hover {
+	background-color: rgba(255, 255, 255, 40);
+}
+QPushButton:pressed {
+	background-color: rgba(255, 255, 255, 70);
+}</string>
+       </property>
+       <property name="text">
+        <string>Ваша сеть</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="VpnButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: white;
+	font-weight: bold;
+	fonr-size: 20pt;
+	background-color: rgba(255, 255, 255, 30);
+	border: 1px solid rgba(255, 255, 255, 40);
+	border-radius: 10px;
+	width: 230px;
+	height: 50px; 
+}
+QPushButton:hover {
+	background-color: rgba(255, 255, 255, 40);
+}
+QPushButton:pressed {
+	background-color: rgba(255, 255, 255, 70);
+}</string>
+       </property>
+       <property name="text">
+        <string>VPN</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="InfoButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: white;
+	font-weight: bold;
+	fonr-size: 20pt;
+	background-color: rgba(255, 255, 255, 30);
+	border: 1px solid rgba(255, 255, 255, 40);
+	border-radius: 10px;
+	width: 230px;
+	height: 50px; 
+}
+QPushButton:hover {
+	background-color: rgba(255, 255, 255, 40);
+}
+QPushButton:pressed {
+	background-color: rgba(255, 255, 255, 70);
+}</string>
+       </property>
+       <property name="text">
+        <string>Справка</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="SettingsButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color: white;
+	font-weight: bold;
+	fonr-size: 20pt;
+	background-color: rgba(255, 255, 255, 30);
+	border: 1px solid rgba(255, 255, 255, 40);
+	border-radius: 10px;
+	width: 230px;
+	height: 50px; 
+}
+QPushButton:hover {
+	background-color: rgba(255, 255, 255, 40);
+}
+QPushButton:pressed {
+	background-color: rgba(255, 255, 255, 70);
+}</string>
+       </property>
+       <property name="text">
+        <string>Настройки</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="upload_frame">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>150</y>
+      <width>181</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 40);
+border: 1px solid rgba(255, 255, 255 , 50);
+border-radius: 10px;
+text-align: center;</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="upload_text">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font-weight: bold;
+fonr-size: 20pt;
+background-color: none;
+border: none;
+width: 230px;
+height: 50px; </string>
+       </property>
+       <property name="text">
+        <string>Upload</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="upload_info">
+       <property name="styleSheet">
+        <string notr="true">text-align: center;
+color: white;
+font-weight: bold;
+fonr-size: 20pt;
+border-radius: 10px;
+width: 230px;
+height: 50px; 
+padding-left: 55px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="download_frame">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>310</y>
+      <width>181</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 40);
+border: 1px solid rgba(255, 255, 255 , 50);
+border-radius: 10px;
+text-align: center;</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QLabel" name="download_text">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font-weight: bold;
+fonr-size: 20pt;
+background-color: none;
+border: none;
+width: 230px;
+height: 50px; </string>
+       </property>
+       <property name="text">
+        <string>Download</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="download_info">
+       <property name="styleSheet">
+        <string notr="true">text-align: center;
+color: white;
+font-weight: bold;
+fonr-size: 20pt;
+border-radius: 10px;
+width: 230px;
+height: 50px; 
+padding-left: 55px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="ip_frame">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>20</y>
+      <width>181</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 40);
+border: 1px solid rgba(255, 255, 255 , 50);
+border-radius: 10px;
+text-align: center;</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="ip_text">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font-weight: bold;
+fonr-size: 20pt;
+background-color: none;
+border: none;
+width: 230px;
+height: 50px; </string>
+       </property>
+       <property name="text">
+        <string>Ваш IP</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="ip_info">
+       <property name="styleSheet">
+        <string notr="true">text-align: center;
+color: white;
+font-weight: bold;
+fonr-size: 20pt;
+border-radius: 10px;
+width: 230px;
+height: 50px; 
+padding-left: 55px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
